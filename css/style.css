@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h3,
+a {
+  font-family: "Noto Sans";
+}
+
+/*Nav*/
+header {
+  background-image: url(/assets/gallery/header/Hero_jul_3_1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  height: 606px;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin-top: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600px;
+  color: #ffffff;
+}
+
+ul a:hover {
+  background-color: #191919;
+  opacity: 60%;
+  border-radius: 24px;
+  padding: 7px 15px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-btn a {
+  font-size: 16px;
+  font-weight: 600px;
+  background-color: #191919;
+  color: #d1ad53;
+  padding: 13px 19px;
+  border-radius: 10px;
+}
+
+.header-text {
+  text-align: center;
+  padding: 28px 35px;
+}
+
+.header-text h1 {
+  font-size: 56px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-text p {
+  font-size: 18px;
+  font-weight: 600px;
+  color: #191919;
+  padding-bottom: 24px;
+}
+
+.header-text a {
+  background-color: #191919;
+  color: #d1ad53;
+  font-size: 16;
+  font-weight: 600px;
+  border-radius: 10px;
+  padding: 13px 30px;
+}
+
+.background {
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 904px;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/*Bestil*/
+.order-background {
+  background-color: #fbfbfb;
+}
+.order {
+  display: flex;
+  max-width: 1080px;
+  margin: auto;
+  height: 609px;
+  padding-top: 60px;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+#box1 {
+  width: 465px;
+  height: 289px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#box2 {
+  width: 222px;
+  height: 204px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#box3 {
+  width: 222px;
+  height: 204px;
+  grid-column-start: 2;
+}
+.order h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #191919;
+}
+
+.order p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.order a {
+  background-color: #191919;
+  color: #d1ad53;
+  font-size: 16px;
+  font-weight: 600px;
+  padding: 13px 30px;
+  border-radius: 10px;
+}
+
+/*Story*/
+#story {
+  background-color: #191919;
+  opacity: 80%;
+  height: 1039px;
+  text-align: left;
+}
+
+#story article {
+  margin: auto;
+  color: white;
+  column-count: 2;
+  width: 100%;
+  max-width: 1366px;
+  padding: 160px;
+}
+
+#story h1 {
+  text-align: center;
+  font-size: 50px;
+
+  font-weight: bold;
+  color: white;
+  padding-top: 70px;
+}
+
+#story h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#story p {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/*Blomsersorter galleri*/
+.gallery {
+  max-width: 1080px;
+  margin: auto;
+  margin-top: 70.3px;
+}
+
+.gallery h1,
+p {
+  text-align: center;
+}
+
+.gallery h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #191919;
+}
+
+.gallery p {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 44px;
+}
+
+/*Accordion*/
+.accordion {
+  background-color: #d1ad53;
+  opacity: 80%;
+}
+
+.details {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 1366px;
+  height: 673px;
+}
+
+.accordion h1 {
+  font-size: 50px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.accordion details {
+  font-size: 18px;
+  font-weight: bold;
+  color: #191919;
+}
+
+/*Kontakt formular*/
+
+/*footer*/
+.footer {
+  background-color: black;
+  height: 275px;
+  padding-top: 65px;
+}
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 1080px;
+  margin: auto;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+footer h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.some {
+  height: 20px;
+  gap: 16px;
+}
