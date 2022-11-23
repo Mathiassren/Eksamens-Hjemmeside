@@ -14,25 +14,32 @@ a {
 /*Nav*/
 header {
   background-image: url(/assets/gallery/header/Hero_jul_3_1.jpg);
-  background-position: center;
   background-size: cover;
-  margin: auto;
-  height: 606px;
+  margin: 0 auto;
+  min-height: 606px;
   background-repeat: no-repeat;
 }
 
 .logo {
   margin-top: 25px;
+  margin-right: 10rem;
 }
 
 nav {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  margin-bottom: 72px;
 }
 
 a {
   text-decoration: none;
+}
+
+nav ul {
+  margin-right: auto;
 }
 
 ul li a {
@@ -43,8 +50,7 @@ ul li a {
 }
 
 ul a:hover {
-  background-color: #191919;
-  opacity: 60%;
+  background-color: rgba(25, 25, 25);
   border-radius: 24px;
   padding: 7px 15px;
 }
@@ -97,11 +103,13 @@ ul a:hover {
   height: 300px;
   margin: auto;
   border-radius: 10px;
+  margin-bottom: 89px;
 }
 
 /*Bestil*/
 .order-background {
   background-color: #fbfbfb;
+  padding-bottom: 50px;
 }
 .order {
   display: flex;
@@ -119,7 +127,7 @@ ul a:hover {
 }
 
 #box1 {
-  width: 465px;
+  width: 462px;
   height: 289px;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -162,9 +170,7 @@ ul a:hover {
 
 /*Story*/
 #story {
-  background-color: #191919;
-  opacity: 80%;
-  height: 1039px;
+  background-color: rgba(25, 25, 25, 0.8);
   text-align: left;
 }
 
@@ -180,7 +186,6 @@ ul a:hover {
 #story h1 {
   text-align: center;
   font-size: 50px;
-
   font-weight: bold;
   color: white;
   padding-top: 70px;
@@ -198,63 +203,180 @@ ul a:hover {
 }
 
 /*Blomsersorter galleri*/
-.gallery {
+#gallery {
+  width: 100%;
   max-width: 1080px;
-  margin: auto;
-  margin-top: 70.3px;
+  margin: 0 auto;
+  padding: 70px 0;
 }
 
-.gallery h1,
-p {
+.gallery-grid {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 168px 168px;
+  grid-template-rows: 168px 168px 168px 168px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery-large {
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+#gallery h1 {
   text-align: center;
+  font-size: 5rem;
+  margin-bottom: 30px;
 }
 
-.gallery h1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: #191919;
-}
-
-.gallery p {
+#gallery p {
+  width: 100%;
+  max-width: 724px;
+  text-align: center;
+  margin: 0 auto;
   font-size: 16px;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 44px;
+  margin-bottom: 44px;
 }
 
 /*Accordion*/
-.accordion {
-  background-color: #d1ad53;
-  opacity: 80%;
+.faq {
+  background: rgba(209, 173, 83, 0.8);
+  width: 100%;
+  padding: 0 70px;
 }
 
-.details {
+.faq h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  width: 1366px;
-  height: 673px;
 }
 
-.accordion h1 {
-  font-size: 50px;
-  font-weight: bold;
-
-  text-align: center;
+.faq-item div {
+  height: 76px;
+  border-bottom: 2px solid #fff;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /*Padding 0 er top og bund, derefter siderne.*/
 }
 
-.accordion details {
-  font-size: 18px;
-  font-weight: bold;
-  color: #191919;
+.faq-item article {
+  display: none;
 }
 
+.faq-item h3 {
+  font-size: 1.9rem;
+  text-align: left;
+}
+
+.faq-item.active div {
+  border-bottom-color: #fff;
+}
+
+.faq-item.active h3 {
+  color: #fff;
+}
+
+.faq-item.active article {
+  color: #fff;
+  display: block;
+  padding: 31px;
+}
+
+.faq-item.active {
+  background: #191919;
+}
+
+.faq-item.active div {
+  border-bottom-color: #d1ad53;
+}
+
+.faq-item button {
+  font-size: 1.6rem;
+  padding: 13px 38px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.faq-item article p,
+.faq-item article h4 {
+  margin-bottom: 16px;
+}
 /*Kontakt formular*/
+#contact {
+  background-color: hwb(43 33% 18%);
+  padding-bottom: 138px;
+  padding-top: 86px;
+}
+
+#contact h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+#contact p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+#contact form {
+  width: 100%;
+  max-width: 1088px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 48px 48px 48px 48px;
+  gap: 32px;
+}
+
+#contact form textarea {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+#contact form ::placeholder {
+  padding-left: 16px;
+  padding-top: 10px;
+}
+
+#contact form textarea,
+#contact form input {
+  border-bottom: 2px solid #191919;
+}
+
+#contact form button {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #191919;
+  color: #fff;
+}
 
 /*footer*/
 .footer {
   background-color: black;
   height: 275px;
   padding-top: 65px;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 footer {
@@ -281,4 +403,30 @@ footer h3 {
 .some {
   height: 20px;
   gap: 16px;
+}
+
+/*Responsiv*/
+@media screen and (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 714px 168px 168px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #story article {
+    columns: 2;
+    width: 0 auto;
+    column-width: 50px;
+  }
+  #gallery-large {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
 }
