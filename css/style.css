@@ -261,6 +261,12 @@ ul a:hover {
   margin: 0 auto;
 }
 
+.faq-item {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
 .faq-item div {
   height: 76px;
   border-bottom: 2px solid #fff;
@@ -285,6 +291,11 @@ ul a:hover {
 
 .faq-item.active h3 {
   color: #fff;
+}
+
+.faq-item.active {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .faq-item.active article {
